@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import rembg
+from rembg import remove
 
 app = Flask(__name__)
 
@@ -7,7 +7,7 @@ app = Flask(__name__)
 def remove_background():
     try:
         image_data = request.get_data()
-        processed_image_data = rembg.remove(image_data)
+        processed_image_data = remove(image_data)
 
         return jsonify({'result': 'success', 'processed_image': processed_image_data.decode()})
     except Exception as e:
