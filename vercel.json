@@ -1,8 +1,11 @@
 {
-  "functions": {
-    "api/remove-background.py": {
-      "runtime": "python3.8",
-      "includeFiles": "app.py requirements.txt"
+    "functions": {
+      "api/remove-background.py": {
+        "runtime": "python3.8",
+        "engines": {
+          "python": "3.8"
+        },
+        "includeFiles": "app.py requirements.txt"
+      }
     }
   }
-}
