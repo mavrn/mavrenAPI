@@ -2,7 +2,7 @@
   "functions": {
     "api/remove-background.py": {
       "runtime": "python3.8",
-      "includeFiles": ["app.py", "requirements.txt"]
+      "includeFiles": "app.py requirements.txt"
     }
   }
 }
